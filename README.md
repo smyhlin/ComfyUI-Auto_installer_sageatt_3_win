@@ -10,7 +10,7 @@ This project provides a suite of PowerShell scripts to fully automate the instal
 
 - **Clean Installation:** Clones the latest version of ComfyUI from the official repository and installs it in a dedicated Python virtual environment (`venv`).
 - **Dependency Management:** Automatically checks for and installs necessary tools:
-    - Python 3.12 (if not present on the system)
+    - Python 3.13 (if not present on the system)
     - Git
     - 7-Zip
     - Aria2 (for accelerated downloads)
