@@ -200,15 +200,15 @@ if ($installedCudaVersion) {
 Write-Log "Checking for Python $($dependencies.tools.python.version)" -Level 0
 
 $pythonCommandToUse = $null
-$requiredVersion = $dependencies.tools.python.version # e.g., "3.12.9"
-$requiredMajorMinor = ($requiredVersion.Split('.')[0..1]) -join '.' # e.g., "3.12"
+$requiredVersion = $dependencies.tools.python.version # e.g., "3.13.7"
+$requiredMajorMinor = ($requiredVersion.Split('.')[0..1]) -join '.' # e.g., "3.13"
 
 try {
-    # We specifically check for the major.minor version (e.g., -3.12)
+    # We specifically check for the major.minor version (e.g., -3.13)
     Write-Log "Checking for Python $requiredMajorMinor via py.exe launcher..." -Level 2
     $versionString = (py "-$requiredMajorMinor" --version 2>&1)
 
-    # Check if the output is what we expect (e.g., "Python 3.12.9")
+    # Check if the output is what we expect (e.g., "Python 3.13.7")
     if ($LASTEXITCODE -eq 0 -and $versionString -like "Python $requiredMajorMinor*") {
         Write-Log "Found compatible Python version: $versionString" -Level 1 -Color Green
         # Set the command to use for the rest of the script (important for venv creation)
@@ -309,10 +309,10 @@ if (-not (Test-Path $comfyPath)) {
 if (-not (Test-Path (Join-Path $comfyPath "venv"))) {
     Write-Log "Creating Python virtual environment..." -Level 1
 
-    # 1. Get the python version from the dependencies file (e.g., "3.12.9")
+    # 1. Get the python version from the dependencies file (e.g., "3.13.7")
     $pythonVersion = $dependencies.tools.python.version
 
-    # 2. Build the version string for the py launcher (e.g., "3.12")
+    # 2. Build the version string for the py launcher (e.g., "3.13")
     $pythonMajorMinor = ($pythonVersion.Split('.')[0..1]) -join '.'
 
     # 3. Force venv creation with the specified Python version
