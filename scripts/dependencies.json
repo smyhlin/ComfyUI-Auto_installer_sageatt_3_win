@@ -1,13 +1,13 @@
 {
   "tools": {
     "python": {
-      "version": "3.12.9",
-      "url": "https://www.python.org/ftp/python/3.12.9/python-3.12.9-amd64.exe",
+      "version": "3.13.7",
+      "url": "https://www.python.org/ftp/python/3.13.7/python-3.13.7-amd64.exe",
       "arguments": "/quiet InstallAllUsers=1 PrependPath=1"
     },
     "git": {
-      "version": "2.41.0.3",
-      "url": "https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.3/Git-2.41.0.3-64-bit.exe",
+      "version": "2.51.0.2",
+      "url": "https://github.com/git-for-windows/git/releases/download/v2.51.0.windows.2/Git-2.51.0.2-64-bit.exe",
       "arguments": "/VERYSILENT"
     },
     "seven_zip": {
@@ -18,8 +18,8 @@
     },
     "aria2": {
       "name": "aria2",
-      "version": "1.36.0",
-      "url": "https://github.com/aria2/aria2/releases/download/release-1.36.0/aria2-1.36.0-win-64bit-build1.zip",
+      "version": "1.37.0",
+      "url": "https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0-win-64bit-build1.zip",
       "install_path": "C:\\ProgramData\\aria2"
     },
     "ninja": {
@@ -35,8 +35,8 @@
     },
     "ccache": {
       "name": "ccache",
-      "version": "4.11.3",
-      "url": "https://github.com/ccache/ccache/releases/download/v4.11.3/ccache-4.11.3-windows-x86_64.zip",
+      "version": "4.12.1",
+      "url": "https://github.com/ccache/ccache/releases/download/v4.12.1/ccache-4.12.1-windows-x86_64.zip",
       "install_path": "C:\\ProgramData\\ccache"
     }
   },
@@ -60,16 +60,16 @@
     "comfyui_requirements": "requirements.txt",
     "wheels": [
       {
-        "name": "nunchaku-1.0.0.dev20250904+torch2.8-cp312-cp312-win_amd64.whl",
-        "url": "https://github.com/nunchaku-tech/nunchaku/releases/download/v1.0.0dev20250904/nunchaku-1.0.0.dev20250904+torch2.8-cp312-cp312-win_amd64.whl"
+        "name": "nunchaku-1.0.1+torch2.10-cp313-cp313-win_amd64.whl",
+        "url": "https://github.com/nunchaku-tech/nunchaku/releases/download/v1.0.1/nunchaku-1.0.1+torch2.10-cp313-cp313-win_amd64.whl"
       },
       {
-        "name": "insightface-0.7.3-cp312-cp312-win_amd64",
-        "url": "https://github.com/UmeAiRT/ComfyUI-Auto_installer/raw/refs/heads/main/whl/insightface-0.7.3-cp312-cp312-win_amd64.whl"
+        "name": "insightface-0.7.3-cp313-cp313-win_amd64",
+        "url": "https://github.com/Gourieff/Assets/blob/main/Insightface/insightface-0.7.3-cp313-cp313-win_amd64.whl"
       },
       {
-        "name": "triton-3.3.0-py3-none-any",
-        "url": "https://github.com/UmeAiRT/ComfyUI-Auto_installer/raw/refs/heads/main/whl/triton-3.3.0-py3-none-any.whl"
+        "name": "triton_windows-3.4.0.post20-cp313-cp313-win_amd64",
+        "url": "https://files.pythonhosted.org/packages/a2/cc/5bcad4a71bcab57f9b1c95fe20b91bd294b86f988007072a6e01fa3f9591/triton_windows-3.4.0.post20-cp313-cp313-win_amd64.whl"
       }
     ],
     "standard": [
