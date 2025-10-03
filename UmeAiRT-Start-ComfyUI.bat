@@ -24,6 +24,6 @@ set "TMP_DIR="%RAW_BASE_DIR%\ComfyUI\temp""
 echo Launching Python script...
 REM Runs the Python script. The %BASE_DIR% and %TMP_DIR% variables already contain the quotes,
 REM ensuring that paths with spaces are treated as a single argument.
-python main.py --use-sage-attention --disable-smart-memory --base-directory %BASE_DIR% --auto-launch --temp-directory %TMP_DIR%
+python main.py --use-sage-attention --disable-smart-memory --base-directory %BASE_DIR% --auto-launch --temp-directory %TMP_DIR% --verbose
 
 pause
